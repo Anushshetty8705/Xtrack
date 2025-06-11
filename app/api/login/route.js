@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import clientPromise from "@/lib/mangodb";
+import clientPromise from "@/lib/Mongodb";
 
 export async function POST(request) {
   try {
