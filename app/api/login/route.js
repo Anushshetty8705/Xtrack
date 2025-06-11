@@ -1,3 +1,4 @@
+import { NextResponse } from 'next/server';
 import clientPromise from "@/lib/mangodb";
 
 export async function POST(request) {
@@ -14,16 +15,16 @@ export async function POST(request) {
     });
 
     if (user) {
-      return Response.json({ error: false, message: "success" });
+      return NextResponse.json({ error: false, message: "success" });
     }
 
-    return Response.json({
+    return NextResponse.json({
       error: true,
       message: "User does not exist",
     });
   } catch (error) {
     console.error("Login Error:", error);
-    return Response.json({
+    return NextResponse.json({
       error: true,
       message: "Internal server error",
     });
