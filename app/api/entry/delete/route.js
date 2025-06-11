@@ -1,5 +1,5 @@
 // pages/api/entry/delete.js
-import clientPromise from "@/lib/mangodb"
+import clientPromise from "@/lib/mongodb"
 import { ObjectId } from "mongodb"
 
 export async function POST(request) {
