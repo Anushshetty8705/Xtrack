@@ -1,4 +1,4 @@
-import clientPromise from "@/lib/mangodb";
+import clientPromise from "@/lib/mongodb";
 
 export async function GET(request) {
   try {
