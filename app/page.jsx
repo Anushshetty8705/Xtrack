@@ -110,6 +110,7 @@ export default function Home() {
     fetch("/api/login", requestOptions) // update endpoint here
       .then((response) => response.json())
       .then((result) => {
+          console.log("Login API Response:", result);
         toast.dismiss(toastId);
 
         if (result.error === false) {
