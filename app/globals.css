@@ -1,0 +1,294 @@
+@import "tailwindcss";
+.custom-scroll::-webkit-scrollbar {
+  width: 10px;
+  height: 8px; /* for horizontal scroll */
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: #1e293b; /* Tailwind slate-800 */
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #3b82f6; /* Tailwind blue-500 */
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* Firefox support */
+.custom-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #3b82f6 #1e293b;
+}
+@layer utilities {
+  @keyframes fade-in-center {
+    0% {
+      opacity: 0;
+      transform: translate3d(0) scale(0.0);
+    }
+
+    100% {
+      opacity: 1;
+      transform:translate3d(0) scale(1);
+    }
+  }
+
+  .animate-fade-in-center {
+    animation: fade-in-center 2s ease-in-out ;
+  }
+}
+@layer utilities {
+  @keyframes fade-in-left {
+    0% {
+      opacity: 0;
+      transform: translateX(-100vw) scale(0.0);
+    }
+
+    100% {
+      opacity: 1;
+      transform:translateX(0) scale(1);
+    }
+  }
+
+  .animate-fade-in-left {
+    animation: fade-in-left 2s ease-in-out ;
+  }
+}
+@layer utilities {
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(-100vh) scale(0.0);
+    }
+
+    100% {
+      opacity: 1;
+      transform:translateY(0) scale(1);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 2s ease-in-out ;
+  }
+}
+@layer utilities {
+  @keyframes fade-in-down {
+    0% {
+      opacity: 0;
+      transform: translateY(100vh) scale(0.0);
+    }
+
+    100% {
+      opacity: 1;
+      transform:translateY(0) scale(1);
+    }
+  }
+
+  .animate-fade-in-down {
+    animation: fade-in-down 2s ease-in-out ;
+  }
+}
+
+@media(max-width: 768px) {
+ .hide{
+  display: none;
+
+ }
+ .box{
+  margin: 40px 40px;
+  padding: 0;
+  width: 80vw;
+ }
+ .logo{
+margin: 20px 0px;
+ }
+ .coin{
+    width: 50px;
+ }
+ .t{
+  font-size: 18px;
+  margin: 0;
+ }
+ .t1{
+  font-size: 40px;
+ }
+ .t2{
+  font-size: 20px;
+ }
+ .input{
+  margin:10px 0;
+  padding: 8px 20px;
+  width: 90%;
+ }
+.i1{
+   margin-left: 10px;
+}
+ .bu{
+  font-size: 18px;
+  padding: 8px 20px;
+ 
+ }
+  .ti{
+  font-size: 18px;
+  margin: 0;
+  text-align: center;
+ }
+ .bu1{
+  margin-right: 66px;
+   margin-left: 60px;
+ }
+ .error{
+    margin: 0px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+ }
+  .error2{
+    margin: 0px;
+    margin-left: 62px;
+ }
+ /* siginig page */
+ .t4{
+  margin-top: 30px
+ }
+ .m{
+  margin-left: 20px
+ }
+ /* login */
+ .view{
+    width:25px;
+    top: 18px;
+ }
+ .lview{
+   top: 20px;
+   left: 80%;
+   width: 25px;
+ }
+ .coi{
+   width: 28px;
+ }
+ .t11{
+   font-size: 20px;
+ }
+ .t22{
+   font-size: 12px
+ }
+ .nav{
+   margin: 0;
+   padding: 5px 15px;
+ }
+ .params{
+   font-size: 12px;
+ }
+ .bu3{
+   margin: 0;padding: 5px 10px;
+   font-size: 12px;
+   font-weight:400;
+ }
+ .coin3{
+  width:35px;
+ }
+ .save{
+  font-size:14px;
+  font-weight:400; 
+  left: 30vw;
+  margin-top: 15px;
+  bottom: 0;
+ }
+ .user{
+   gap: 20px;
+ }
+.iadd{
+  width:50px;
+ left: 40%;
+  bottom:30px;
+}
+.h{
+  height: 84vh;
+  
+}
+.h1{
+   height: 70vh;
+}
+ .width{
+  width:90%;
+  height: 70%;
+  margin:auto;
+  left:20px;
+}
+.coin2{
+  width:50px;
+}
+.forgot{
+  margin: 0;
+}
+.add{
+width: 80%;
+ margin-left: 18px;
+ margin-top: 10px;
+ margin-bottom:5px
+}
+.error3{
+  margin-left: 22px;
+  margin-bottom: 10px;
+}
+/* login page */
+.text{
+  font-size: 10px;
+}
+.widt{
+  width: 15px;
+}
+.pad{
+  padding: 0;
+  align-items: start;
+}
+.text1{
+  font-size:10px;
+}
+
+
+
+/* forgotpage */
+.forgotbox{
+  width:80vw;
+  margin: 10vh auto;
+}
+.find{
+  margin: 30px 50px 20px 00px;
+  font-size: 24px;
+}
+.enter{
+  margin: 0;
+}
+.phone{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.inpphone{
+margin: 10px 0;
+margin-left: 12px;
+width:70vw;
+
+}
+.show{
+  display: flex;
+}
+.search{
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  margin-left: 100px;
+}
+.username{
+  margin: 0 0px 5px 90px;
+}
+.account{
+  margin: 10px 0px 10px  10px;
+}
+.passerror{
+  margin-left:220px
+}
+}
